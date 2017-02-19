@@ -1,0 +1,18 @@
+Changes Done
+1. Asking permission from the user for accessing location and permission to access to STorage.
+2. Fetching all the requested places by in the nearby area selcted by user.(search functionality) (in Mapsactivity added diffrent colored markers for places).:-
+-Added fetchurl,parsejson,add to database(smartdb.addlistedplaces) functionalitis.
+3. Change in the Functionality of seek bar (distanceval=duitancevalue*progressbar) for kilometer and (distanceval=duitancevalue*progressbar*(0.621))for miles
+4. Removed comments from all the likeus shareus and rateus onclick listners.
+5. Bug in share activity null pointer exception was removed by initylizing the share button.
+6. OnmapReady function in MapsActivity, added-:
+if(Constants.location!=null)
+{
+... the code
+}
+else 
+{
+Toast.makeText(getApplicationContext,"SOmething went wrong",Toast.LENGTH_SHORT).show();
+}
+7.fetching of listedplaces in smartlistactivity by taking data from database smartdb.
+8. All functionalies are working properly.
